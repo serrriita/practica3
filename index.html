@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FootballViz · Reproductor Táctico</title>
+
+  <!-- HLS.js & DASH.js -->
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest/dist/hls.min.js"></script>
+  <script src="https://cdn.dashjs.org/latest/dash.all.min.js"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="layout">
+
+  <a href="/webrtc" class="webrtc-btn">📹 Videollamada WebRTC</a>
+  <!-- ══ VIDEO PANEL ════════════════════════════════════════════ -->
+  <div class="panel" id="video-panel" style="opacity:1;transform:none;">
+    <div class="video-wrap" id="video-wrap">
+      <div class="drop-overlay" id="drop-overlay">
+        <div class="drop-icon">⚽</div>
+        <div class="drop-text">Arrastra un vídeo aquí<br>o usa la URL de una fuente HLS / DASH</div>
+        <input type="file" id="file-input" accept="video/*" style="display:none"/>
+        <button class="drop-btn" id="choose-file-btn">Elegir archivo</button>
+        <button class="ctrl-btn" id="load-url-btn">Cargar URL</button>
+      </div>
+
+      <video id="main-video" preload="metadata">
+      <track id="metadata-track" kind="metadata" src="vtt/metadata.vtt" default>
+      <track id="chapters-track" kind="chapters" src="vtt/chapters.vtt" srclang="es" label="Capítulos">
+      <track id="subtitles_es" kind="subtitles" src="vtt/subtitles_es.vtt" srclang="es" label="Español" >
+      <track id="subtitles_en" kind="subtitles" src="vtt/subtitles_en.vtt" srclang="en" label="English">
+      </video>
+      <button class="expand-btn" id="expand-btn" title="Pantalla completa" style="display:none">⛶</button>
+    </div>
+
+    <div class="vcontrols">
+      <div class="progress-row">
+        <span class="time-label" id="time-cur">0:00</span>
+        <div class="progress-bar-wrap" id="progress-wrap">
+          <div class="progress-bar-fill" id="progress-fill"></div>
+        </div>
+        <span class="time-label" id="time-dur">0:00</span>
+      </div>
+      <div class="ctrl-row">
+        <button class="ctrl-btn" id="play-btn">▶</button>
+        <div class="vol-wrap">
+          🔊
+          <input type="range" class="vol-slider" id="vol-slider" min="0" max="1" step="0.05" value="1"/>
+        </div>
+
+        <select class="ctrl-select" id="quality-select">
+          <option value="auto-hls">HLS Adaptativo</option>
+          <option value="auto-dash">DASH Adaptativo</option>
+          <option value="mse">MSE (fMP4)</option>
+          <option value="4k" selected>4K</option>
+          <option value="1080p">1080p</option>
+          <option value="720p">720p</option>
+          <option value="360p">360p</option>
+        </select>
+
+        <select class="ctrl-select" id="speed-select">
+          <option value="0.25">×0.25</option>
+          <option value="0.5">×0.5</option>
+          <option value="0.75">×0.75</option>
+          <option value="1" selected>×1.0</option>
+          <option value="1.25">×1.25</option>
+          <option value="1.5">×1.5</option>
+          <option value="2">×2.0</option>
+        </select>
+
+        <select class="ctrl-select" id="subtitle-select">
+          <option value="off" selected>Subtítulos: Off</option>
+          <option value="es">Español</option>
+          <option value="en">English</option>
+        </select>
+
+        <span class="speed-display" id="speed-display">×1.0</span>
+
+        <button class="ctrl-btn" id="prev-goal-btn">Gol anterior</button>
+        <button class="ctrl-btn" id="next-goal-btn">Siguiente gol</button>
+      </div>
+    </div>
+  </div>
+
+<!-- ══ INFORMACIÓN DEL PARTIDO ──────────────────────────────── -->
+<div class="panel" id="match-panel">
+  <div class="panel-header">
+    <div class="dot"></div>
+    <h3>Información del Partido</h3>
+    <span class="badge" id="match-badge">EN VIVO</span>
+  </div>
+  <div class="panel-body">
+  <div class="score-board">
+    <div class="team-block">
+      <div class="team-name" id="match-home-team">---</div>
+      <div class="team-sub" id="match-home-label">Local</div>
+    </div>
+
+    <div class="score-center">
+      <div class="score-num" id="score-display">- — -</div>
+      <div class="score-min" id="score-min">Min. --</div>
+    </div>
+
+    <div class="team-block">
+      <div class="team-name" id="match-away-team">---</div>
+      <div class="team-sub" id="match-away-label">Visitante</div>
+    </div>
+  </div>
+
+  <div class="match-meta">
+    <div class="meta-item">
+      <div class="meta-label">Estadio</div>
+      <div class="meta-value" id="match-stadium">---</div>
+    </div>
+    <div class="meta-item">
+      <div class="meta-label">Fecha</div>
+      <div class="meta-value" id="match-date">---</div>
+    </div>
+    <div class="meta-item">
+      <div class="meta-label">Árbitro</div>
+      <div class="meta-value" id="match-referee">---</div>
+    </div>
+    <div class="meta-item">
+      <div class="meta-label">Asistencia</div>
+      <div class="meta-value highlight" id="match-attendance">---</div>
+    </div>
+  </div>
+
+  <div class="goals-list" id="goals-list"></div>
+</div>
+</div>
+
+  <!-- ══ COMPETICIÓN ═══════════════════════════════════════════ -->
+  <div class="panel" id="comp-panel">
+    <div class="panel-header">
+      <div class="dot" style="background:var(--accent3);box-shadow:0 0 8px var(--accent3)"></div>
+      <h3>Competición</h3>
+      <span class="badge" id="competition-season">----</span>
+    </div>
+    <div class="panel-body">
+  <div class="comp-logo-area">
+    <div class="comp-emblem" id="competition-icon">🏆</div>
+    <div class="comp-info">
+      <h2 id="competition-name">---</h2>
+      <p id="competition-country">---</p>
+      <p id="competition-round" style="margin-top:3px;color:var(--accent);font-size:.6rem;font-family:var(--font-mono);">---</p>
+    </div>
+  </div>
+  <div class="comp-stats" id="competition-stats"></div>
+</div>
+    
+  </div>
+
+ <!-- ══ JUGADOR PANEL (más pequeño) ───────────────────────────── -->
+<div class="panel" id="player-panel">
+  <div class="panel-header">
+    <div class="dot" style="background:var(--green);box-shadow:0 0 8px var(--green)"></div>
+    <h3>Información del Goleador</h3>
+    <span class="badge" id="player-badge">Gol · --</span>
+  </div>
+  <div class="panel-body">
+  <div class="player-card">
+    <div class="player-avatar" id="player-avatar">⚽</div>
+    <div class="player-info">
+      <div class="player-number" id="player-number">#--</div>
+      <div class="player-name" id="player-name">---</div>
+      <div class="player-role" id="player-role">---</div>
+    </div>
+  </div>
+
+  <div class="player-stats-grid" id="player-stats-grid"></div>
+</div>
+</div>
+
+
+  <!-- ══ TÁCTICA ═══════════════════════════════════════════════ -->
+  <div class="panel" id="tactical-panel">
+    <div class="panel-header">
+      <div class="dot" style="background:var(--accent2);box-shadow:0 0 8px var(--accent2)"></div>
+      <h3>Representación Táctica</h3>
+      <span class="badge">Próximamente</span>
+    </div>
+    <div class="panel-body">
+      <div class="coming-soon-wrap">
+        <div class="pitch-placeholder"></div>
+        <div class="cs-icon">🔬</div>
+        <div class="cs-title">En desarrollo</div>
+        <div class="cs-sub">Aquí aparecerá la representación del campo con la trayectoria del gol y las posiciones de los jugadores</div>
+      </div>
+    </div>
+  </div>
+
+   <!-- ══ TIMELINE ══════════════════════════════════════════════ -->
+  <div class="panel" id="timeline-panel">
+    <div class="panel-header">
+      <div class="dot" style="background:var(--accent2);box-shadow:0 0 8px var(--accent2)"></div>
+      <h3>Línea de Tiempo</h3>
+      <span class="badge" id="tl-badge">-- min</span>
+    </div>
+
+    <div class="panel-body">
+      <div class="timeline" id="timeline"></div>
+    </div>
+  </div>
+
+</div>
+
+<!-- JS -->
+<script src="script.js"></script>
+</body>
+</html>

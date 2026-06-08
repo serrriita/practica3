@@ -1,0 +1,1513 @@
+[
+{
+  "id": "goal_haaland_dortmund_2022",
+  "type": "goal",
+  "action": "show_goal_data",
+
+  "start": 0,
+  "end": 14,
+
+  "payload": {
+
+    "videoMinute": "84'",
+
+    "player": "Erling Haaland",
+    "playerNumber": "#9",
+    "playerFlag": "🇳🇴",
+    "playerPosition": "Delantero Centro",
+    "playerTeam": "Manchester City",
+
+    "playerStats": [
+      {
+        "label": "Goles temporada",
+        "value": "52"
+      },
+      {
+        "label": "Asistencias",
+        "value": "9"
+      },
+      {
+        "label": "Overall",
+        "value": "91"
+      },
+      {
+        "label": "Velocidad",
+        "value": "89"
+      },
+      {
+        "label": "Tiro",
+        "value": "94"
+      },
+      {
+        "label": "Físico",
+        "value": "88"
+      }
+    ],
+
+    "homeTeam": "Manchester City",
+    "awayTeam": "Borussia Dortmund",
+
+    "homeLabel": "Local",
+    "awayLabel": "Visitante",
+
+    "result": "2 — 1",
+
+    "stadium": "Etihad Stadium",
+    "date": "14 Septiembre 2022",
+    "referee": "Daniele Orsato",
+    "attendance": "51.938",
+
+    "competition": "UEFA Champions League",
+    "competitionCountry": "Europa",
+    "competitionRound": "Fase de grupos",
+    "competitionSeason": "2022/23",
+
+    "competitionStats": [
+      {
+        "label": "Grupo",
+        "value": "Grupo G"
+      },
+      {
+        "label": "Posición City",
+        "value": "1º"
+      },
+      {
+        "label": "Posición Dortmund",
+        "value": "2º"
+      },
+      {
+        "label": "Máximo goleador",
+        "value": "Haaland · 5 goles"
+      },
+      {
+        "label": "Historial",
+        "value": "MCI 3 — 1 BVB"
+      }
+    ],
+
+    "goalDescription": "Remate acrobático de Erling Haaland tras centro lateral de João Cancelo.",
+
+    "timeline": [
+      {
+        "minute": "1'",
+        "type": "info",
+        "event": "Inicio del partido",
+        "detail": "Etihad Stadium · Champions League"
+      },
+
+      {
+        "minute": "56'",
+        "type": "goal",
+        "event": "⚽ Gol Dortmund",
+        "detail": "Jude Bellingham"
+      },
+
+      {
+        "minute": "80'",
+        "type": "goal",
+        "event": "⚽ Gol Manchester City",
+        "detail": "John Stones"
+      },
+
+      {
+        "minute": "84'",
+        "type": "goal",
+        "event": "⚽ GOL — Erling Haaland",
+        "detail": "Asistencia de João Cancelo"
+      },
+
+      {
+        "minute": "90'",
+        "type": "info",
+        "event": "Final del partido",
+        "detail": "Manchester City 2 — 1 Dortmund"
+      }
+    ]
+  }
+}
+
+,
+
+{
+  "id": "goal_valverde_city_2024",
+  "type": "goal",
+  "action": "show_goal_data",
+
+  "start": 14,
+  "end": 30,
+
+  "payload": {
+
+    "videoMinute": "79'",
+
+    "player": "Federico Valverde",
+    "playerNumber": "#15",
+    "playerFlag": "🇺🇾",
+    "playerPosition": "Centrocampista",
+    "playerTeam": "Real Madrid",
+
+    "playerStats": [
+      {
+        "label": "Goles temporada",
+        "value": "3"
+      },
+      {
+        "label": "Asistencias",
+        "value": "7"
+      },
+      {
+        "label": "Overall",
+        "value": "88"
+      },
+      {
+        "label": "Velocidad",
+        "value": "86"
+      },
+      {
+        "label": "Tiro",
+        "value": "84"
+      },
+      {
+        "label": "Resistencia",
+        "value": "94"
+      }
+    ],
+
+    "homeTeam": "Real Madrid",
+    "awayTeam": "Manchester City",
+
+    "homeLabel": "Local",
+    "awayLabel": "Visitante",
+
+    "result": "3 — 3",
+
+    "stadium": "Santiago Bernabéu",
+    "date": "9 Abril 2024",
+    "referee": "François Letexier",
+    "attendance": "83.186",
+
+    "competition": "UEFA Champions League",
+    "competitionCountry": "Europa",
+    "competitionRound": "Cuartos de final",
+    "competitionSeason": "2023/24",
+
+    "competitionStats": [
+      {
+        "label": "Ida",
+        "value": "Cuartos de final"
+      },
+      {
+        "label": "Posesión City",
+        "value": "58%"
+      },
+      {
+        "label": "Tiros Real Madrid",
+        "value": "14"
+      },
+      {
+        "label": "Tiros Manchester City",
+        "value": "18"
+      },
+      {
+        "label": "Jugador destacado",
+        "value": "Valverde"
+      }
+    ],
+
+    "goalDescription": "Volea espectacular de Federico Valverde tras centro lateral de Vinícius Jr.",
+
+    "timeline": [
+      {
+        "minute": "2'",
+        "type": "goal",
+        "event": "⚽ Gol Manchester City",
+        "detail": "Bernardo Silva"
+      },
+
+      {
+        "minute": "12'",
+        "type": "goal",
+        "event": "⚽ Gol Real Madrid",
+        "detail": "Camavinga"
+      },
+
+      {
+        "minute": "14'",
+        "type": "goal",
+        "event": "⚽ Gol Real Madrid",
+        "detail": "Rodrygo"
+      },
+
+      {
+        "minute": "66'",
+        "type": "goal",
+        "event": "⚽ Gol Manchester City",
+        "detail": "Phil Foden"
+      },
+
+      {
+        "minute": "71'",
+        "type": "goal",
+        "event": "⚽ Gol Manchester City",
+        "detail": "Joško Gvardiol"
+      },
+
+      {
+        "minute": "79'",
+        "type": "goal",
+        "event": "⚽ GOL — Federico Valverde",
+        "detail": "Asistencia de Vinícius Jr."
+      },
+
+      {
+        "minute": "90'",
+        "type": "info",
+        "event": "Final del partido",
+        "detail": "Real Madrid 3 — 3 Manchester City"
+      }
+    ]
+  }
+}
+, 
+{
+  "id": "goal_foden_real_madrid_2024",
+  "type": "goal",
+  "action": "show_goal_data",
+
+  "start": 30,
+  "end": 48,
+
+  "payload": {
+
+    "videoMinute": "76'",
+
+    "player": "Phil Foden",
+    "playerNumber": "#47",
+    "playerFlag": "🏴",
+    "playerPosition": "Mediapunta",
+    "playerTeam": "Manchester City",
+
+    "playerStats": [
+      {
+        "label": "Goles temporada",
+        "value": "24"
+      },
+      {
+        "label": "Asistencias",
+        "value": "11"
+      },
+      {
+        "label": "Overall",
+        "value": "89"
+      },
+      {
+        "label": "Velocidad",
+        "value": "88"
+      },
+      {
+        "label": "Regate",
+        "value": "91"
+      },
+      {
+        "label": "Tiro",
+        "value": "87"
+      }
+    ],
+
+    "homeTeam": "Manchester City",
+    "awayTeam": "Real Madrid",
+
+    "homeLabel": "Local",
+    "awayLabel": "Visitante",
+
+    "result": "1 — 1",
+
+    "stadium": "Etihad Stadium",
+    "date": "17 Abril 2024",
+    "referee": "Daniele Orsato",
+    "attendance": "52.000",
+
+    "competition": "UEFA Champions League",
+    "competitionCountry": "Europa",
+    "competitionRound": "Cuartos de final · Vuelta",
+    "competitionSeason": "2023/24",
+
+    "competitionStats": [
+      {
+        "label": "Posesión City",
+        "value": "67%"
+      },
+      {
+        "label": "Tiros City",
+        "value": "33"
+      },
+      {
+        "label": "Tiros Madrid",
+        "value": "8"
+      },
+      {
+        "label": "Corners City",
+        "value": "18"
+      },
+      {
+        "label": "Jugador destacado",
+        "value": "Phil Foden"
+      }
+    ],
+
+    "goalDescription": "Disparo espectacular de Phil Foden desde fuera del área directo a la escuadra.",
+
+    "timeline": [
+      {
+        "minute": "12'",
+        "type": "goal",
+        "event": "⚽ Gol Real Madrid",
+        "detail": "Rodrygo"
+      },
+
+      {
+        "minute": "76'",
+        "type": "goal",
+        "event": "⚽ GOL — Phil Foden",
+        "detail": "Disparo lejano a la escuadra"
+      },
+
+      {
+        "minute": "79'",
+        "type": "goal",
+        "event": "⚽ Gol Manchester City",
+        "detail": "Joško Gvardiol"
+      },
+
+      {
+        "minute": "90'",
+        "type": "info",
+        "event": "Final del partido",
+        "detail": "Manchester City 1 — 1 Real Madrid"
+      }
+    ]
+  }
+}
+,
+{
+  "id": "goal_brahim_leipzig_2024",
+  "type": "goal",
+  "action": "show_goal_data",
+
+  "start": 48,
+  "end": 61,
+
+  "payload": {
+
+    "videoMinute": "48'",
+
+    "player": "Brahim Díaz",
+    "playerNumber": "#21",
+    "playerFlag": "🇪🇸",
+    "playerPosition": "Mediapunta",
+    "playerTeam": "Real Madrid",
+
+    "playerStats": [
+      {
+        "label": "Goles temporada",
+        "value": "9"
+      },
+      {
+        "label": "Asistencias",
+        "value": "4"
+      },
+      {
+        "label": "Overall",
+        "value": "84"
+      },
+      {
+        "label": "Velocidad",
+        "value": "85"
+      },
+      {
+        "label": "Regate",
+        "value": "90"
+      },
+      {
+        "label": "Tiro",
+        "value": "81"
+      }
+    ],
+
+    "homeTeam": "RB Leipzig",
+    "awayTeam": "Real Madrid",
+
+    "homeLabel": "Local",
+    "awayLabel": "Visitante",
+
+    "result": "0 — 1",
+
+    "stadium": "Red Bull Arena",
+    "date": "13 Febrero 2024",
+    "referee": "Irfan Peljto",
+    "attendance": "47.069",
+
+    "competition": "UEFA Champions League",
+    "competitionCountry": "Europa",
+    "competitionRound": "Octavos de final · Ida",
+    "competitionSeason": "2023/24",
+
+    "competitionStats": [
+      {
+        "label": "Posesión Madrid",
+        "value": "52%"
+      },
+      {
+        "label": "Tiros Leipzig",
+        "value": "15"
+      },
+      {
+        "label": "Tiros Madrid",
+        "value": "13"
+      },
+      {
+        "label": "Paradas Lunin",
+        "value": "9"
+      },
+      {
+        "label": "Jugador destacado",
+        "value": "Brahim Díaz"
+      }
+    ],
+
+    "goalDescription": "Golazo individual de Brahim Díaz tras una gran jugada dentro del área superando a varios defensores.",
+
+    "timeline": [
+      {
+        "minute": "1'",
+        "type": "info",
+        "event": "Inicio del partido",
+        "detail": "Red Bull Arena · Champions League"
+      },
+
+      {
+        "minute": "10'",
+        "type": "info",
+        "event": "Parada de Lunin",
+        "detail": "Gran intervención del portero madridista"
+      },
+
+      {
+        "minute": "48'",
+        "type": "goal",
+        "event": "⚽ GOL — Brahim Díaz",
+        "detail": "Gol individual espectacular"
+      },
+
+      {
+        "minute": "76'",
+        "type": "info",
+        "event": "Presión Leipzig",
+        "detail": "Varias ocasiones consecutivas"
+      },
+
+      {
+        "minute": "90'",
+        "type": "info",
+        "event": "Final del partido",
+        "detail": "RB Leipzig 0 — 1 Real Madrid"
+      }
+    ]
+  }
+}
+,
+{
+  "id": "goal_neymar_mexico_2018",
+  "type": "goal",
+  "action": "show_goal_data",
+
+  "start": 61,
+  "end": 86,
+
+  "payload": {
+
+    "videoMinute": "51'",
+
+    "player": "Neymar Jr.",
+    "playerNumber": "#10",
+    "playerFlag": "🇧🇷",
+    "playerPosition": "Extremo Izquierdo",
+    "playerTeam": "Brasil",
+
+    "playerStats": [
+      {
+        "label": "Goles Mundial",
+        "value": "2"
+      },
+      {
+        "label": "Asistencias",
+        "value": "1"
+      },
+      {
+        "label": "Overall",
+        "value": "92"
+      },
+      {
+        "label": "Velocidad",
+        "value": "91"
+      },
+      {
+        "label": "Regate",
+        "value": "95"
+      },
+      {
+        "label": "Tiro",
+        "value": "89"
+      }
+    ],
+
+    "homeTeam": "Brasil",
+    "awayTeam": "México",
+
+    "homeLabel": "Favorito",
+    "awayLabel": "Rival",
+
+    "result": "2 — 0",
+
+    "stadium": "Samara Arena",
+    "date": "2 Julio 2018",
+    "referee": "Gianluca Rocchi",
+    "attendance": "41.970",
+
+    "competition": "Copa del Mundo FIFA",
+    "competitionCountry": "Rusia 2018",
+    "competitionRound": "Octavos de final",
+    "competitionSeason": "2018",
+
+    "competitionStats": [
+      {
+        "label": "Posesión Brasil",
+        "value": "53%"
+      },
+      {
+        "label": "Tiros Brasil",
+        "value": "21"
+      },
+      {
+        "label": "Tiros México",
+        "value": "13"
+      },
+      {
+        "label": "Jugador destacado",
+        "value": "Neymar Jr."
+      },
+      {
+        "label": "Clasificación",
+        "value": "Brasil a cuartos"
+      }
+    ],
+
+    "goalDescription": "Neymar culmina una gran jugada colectiva definiendo dentro del área tras asistencia de Willian.",
+
+    "timeline": [
+      {
+        "minute": "1'",
+        "type": "info",
+        "event": "Inicio del partido",
+        "detail": "Samara Arena · Mundial 2018"
+      },
+
+      {
+        "minute": "25'",
+        "type": "info",
+        "event": "Ocasión México",
+        "detail": "Disparo peligroso de Lozano"
+      },
+
+      {
+        "minute": "51'",
+        "type": "goal",
+        "event": "⚽ GOL — Neymar Jr.",
+        "detail": "Asistencia de Willian"
+      },
+
+      {
+        "minute": "88'",
+        "type": "goal",
+        "event": "⚽ Gol Brasil",
+        "detail": "Roberto Firmino"
+      },
+
+      {
+        "minute": "90'",
+        "type": "info",
+        "event": "Final del partido",
+        "detail": "Brasil 2 — 0 México"
+      }
+    ]
+  }
+}
+,
+{
+  "id": "goal_cristiano_juventus_2018",
+  "type": "goal",
+  "action": "show_goal_data",
+
+  "start": 86,
+  "end": 100,
+
+  "payload": {
+
+    "videoMinute": "64'",
+
+    "player": "Cristiano Ronaldo",
+    "playerNumber": "#7",
+    "playerFlag": "🇵🇹",
+    "playerPosition": "Delantero",
+    "playerTeam": "Real Madrid",
+
+    "playerStats": [
+      {
+        "label": "Goles UCL",
+        "value": "15"
+      },
+      {
+        "label": "Asistencias",
+        "value": "3"
+      },
+      {
+        "label": "Overall",
+        "value": "94"
+      },
+      {
+        "label": "Velocidad",
+        "value": "92"
+      },
+      {
+        "label": "Remate",
+        "value": "96"
+      },
+      {
+        "label": "Salto",
+        "value": "99"
+      }
+    ],
+
+    "homeTeam": "Juventus",
+    "awayTeam": "Real Madrid",
+
+    "homeLabel": "Local",
+    "awayLabel": "Visitante",
+
+    "result": "0 — 3",
+
+    "stadium": "Allianz Stadium",
+    "date": "3 Abril 2018",
+    "referee": "Cüneyt Çakır",
+    "attendance": "41.507",
+
+    "competition": "UEFA Champions League",
+    "competitionCountry": "Europa",
+    "competitionRound": "Cuartos de final · Ida",
+    "competitionSeason": "2017/18",
+
+    "competitionStats": [
+      {
+        "label": "Posesión Madrid",
+        "value": "57%"
+      },
+      {
+        "label": "Tiros Real Madrid",
+        "value": "14"
+      },
+      {
+        "label": "Tiros Juventus",
+        "value": "9"
+      },
+      {
+        "label": "Jugador destacado",
+        "value": "Cristiano Ronaldo"
+      },
+      {
+        "label": "Resultado global",
+        "value": "0 — 3"
+      }
+    ],
+
+    "goalDescription": "Espectacular chilena de Cristiano Ronaldo tras centro de Dani Carvajal.",
+
+    "timeline": [
+      {
+        "minute": "3'",
+        "type": "goal",
+        "event": "⚽ Gol Real Madrid",
+        "detail": "Cristiano Ronaldo"
+      },
+
+      {
+        "minute": "64'",
+        "type": "goal",
+        "event": "⚽ GOL — Cristiano Ronaldo",
+        "detail": "Chilena histórica"
+      },
+
+      {
+        "minute": "72'",
+        "type": "goal",
+        "event": "⚽ Gol Real Madrid",
+        "detail": "Marcelo"
+      },
+
+      {
+        "minute": "90'",
+        "type": "info",
+        "event": "Final del partido",
+        "detail": "Juventus 0 — 3 Real Madrid"
+      }
+    ]
+  }
+}
+,
+{
+  "id": "goal_bale_barcelona_2014",
+  "type": "goal",
+  "action": "show_goal_data",
+
+  "start": 101,
+  "end": 114,
+
+  "payload": {
+
+    "videoMinute": "85'",
+
+    "player": "Gareth Bale",
+    "playerNumber": "#11",
+    "playerFlag": "🏴",
+    "playerPosition": "Extremo Izquierdo",
+    "playerTeam": "Real Madrid",
+
+    "playerStats": [
+      {
+        "label": "Goles temporada",
+        "value": "22"
+      },
+      {
+        "label": "Asistencias",
+        "value": "16"
+      },
+      {
+        "label": "Overall",
+        "value": "90"
+      },
+      {
+        "label": "Velocidad",
+        "value": "96"
+      },
+      {
+        "label": "Sprint",
+        "value": "99"
+      },
+      {
+        "label": "Definición",
+        "value": "88"
+      }
+    ],
+
+    "homeTeam": "Real Madrid",
+    "awayTeam": "FC Barcelona",
+
+    "homeLabel": "Neutral",
+    "awayLabel": "Neutral",
+
+    "result": "2 — 1",
+
+    "stadium": "Mestalla",
+    "date": "16 Abril 2014",
+    "referee": "Alberto Undiano Mallenco",
+    "attendance": "52.000",
+
+    "competition": "Copa del Rey",
+    "competitionCountry": "España",
+    "competitionRound": "Final",
+    "competitionSeason": "2013/14",
+
+    "competitionStats": [
+      {
+        "label": "Final",
+        "value": "Copa del Rey"
+      },
+      {
+        "label": "Posesión Barça",
+        "value": "68%"
+      },
+      {
+        "label": "Tiros Real Madrid",
+        "value": "13"
+      },
+      {
+        "label": "Tiros Barcelona",
+        "value": "17"
+      },
+      {
+        "label": "Jugador destacado",
+        "value": "Gareth Bale"
+      }
+    ],
+
+    "goalDescription": "Carrera histórica de Gareth Bale superando a Bartra por banda antes de definir ante Pinto.",
+
+    "timeline": [
+      {
+        "minute": "11'",
+        "type": "goal",
+        "event": "⚽ Gol Real Madrid",
+        "detail": "Ángel Di María"
+      },
+
+      {
+        "minute": "68'",
+        "type": "goal",
+        "event": "⚽ Gol Barcelona",
+        "detail": "Marc Bartra"
+      },
+
+      {
+        "minute": "85'",
+        "type": "goal",
+        "event": "⚽ GOL — Gareth Bale",
+        "detail": "Carrera histórica por banda"
+      },
+
+      {
+        "minute": "90'",
+        "type": "info",
+        "event": "Final del partido",
+        "detail": "Real Madrid 2 — 1 FC Barcelona"
+      }
+    ]
+  }
+}
+,
+{
+  "id": "goal_arda_guler_bayern_2025",
+  "type": "goal",
+  "action": "show_goal_data",
+
+  "start": 114,
+  "end": 127,
+
+  "payload": {
+
+    "videoMinute": "78'",
+
+    "player": "Arda Güler",
+    "playerNumber": "#15",
+    "playerFlag": "🇹🇷",
+    "playerPosition": "Mediapunta",
+    "playerTeam": "Real Madrid",
+
+    "playerStats": [
+      {
+        "label": "Goles temporada",
+        "value": "11"
+      },
+      {
+        "label": "Asistencias",
+        "value": "8"
+      },
+      {
+        "label": "Overall",
+        "value": "87"
+      },
+      {
+        "label": "Regate",
+        "value": "91"
+      },
+      {
+        "label": "Pase",
+        "value": "89"
+      },
+      {
+        "label": "Faltas",
+        "value": "93"
+      }
+    ],
+
+    "homeTeam": "Real Madrid",
+    "awayTeam": "Bayern Múnich",
+
+    "homeLabel": "Local",
+    "awayLabel": "Visitante",
+
+    "result": "2 — 1",
+
+    "stadium": "Santiago Bernabéu",
+    "date": "2025",
+    "referee": "Szymon Marciniak",
+    "attendance": "84.000",
+
+    "competition": "UEFA Champions League",
+    "competitionCountry": "Europa",
+    "competitionRound": "Semifinal",
+    "competitionSeason": "2024/25",
+
+    "competitionStats": [
+      {
+        "label": "Posesión Madrid",
+        "value": "54%"
+      },
+      {
+        "label": "Tiros Real Madrid",
+        "value": "16"
+      },
+      {
+        "label": "Tiros Bayern",
+        "value": "12"
+      },
+      {
+        "label": "Jugador destacado",
+        "value": "Arda Güler"
+      },
+      {
+        "label": "Tipo de gol",
+        "value": "Falta directa"
+      }
+    ],
+
+    "goalDescription": "Golazo de falta directa de Arda Güler al ángulo desde la frontal del área.",
+
+    "timeline": [
+      {
+        "minute": "1'",
+        "type": "info",
+        "event": "Inicio del partido",
+        "detail": "Bernabéu · Champions League"
+      },
+
+      {
+        "minute": "33'",
+        "type": "goal",
+        "event": "⚽ Gol Bayern",
+        "detail": "Harry Kane"
+      },
+
+      {
+        "minute": "61'",
+        "type": "goal",
+        "event": "⚽ Gol Real Madrid",
+        "detail": "Vinícius Jr."
+      },
+
+      {
+        "minute": "78'",
+        "type": "goal",
+        "event": "⚽ GOL — Arda Güler",
+        "detail": "Golazo de falta directa"
+      },
+
+      {
+        "minute": "90'",
+        "type": "info",
+        "event": "Final del partido",
+        "detail": "Real Madrid 2 — 1 Bayern Múnich"
+      }
+    ]
+  }
+}
+,
+{
+  "id": "goal_julian_barcelona_2025",
+  "type": "goal",
+  "action": "show_goal_data",
+
+  "start": 127,
+  "end": 146,
+
+  "payload": {
+
+    "videoMinute": "89'",
+
+    "player": "Julián Álvarez",
+    "playerNumber": "#19",
+    "playerFlag": "🇦🇷",
+    "playerPosition": "Delantero",
+    "playerTeam": "Atlético de Madrid",
+
+    "playerStats": [
+      {
+        "label": "Goles temporada",
+        "value": "27"
+      },
+      {
+        "label": "Asistencias",
+        "value": "10"
+      },
+      {
+        "label": "Overall",
+        "value": "88"
+      },
+      {
+        "label": "Tiro",
+        "value": "89"
+      },
+      {
+        "label": "Faltas",
+        "value": "91"
+      },
+      {
+        "label": "Definición",
+        "value": "90"
+      }
+    ],
+
+    "homeTeam": "FC Barcelona",
+    "awayTeam": "Atlético de Madrid",
+
+    "homeLabel": "Local",
+    "awayLabel": "Visitante",
+
+    "result": "1 — 2",
+
+    "stadium": "Spotify Camp Nou",
+    "date": "2025",
+    "referee": "José María Sánchez Martínez",
+    "attendance": "89.214",
+
+    "competition": "UEFA Champions League",
+    "competitionCountry": "Europa",
+    "competitionRound": "Cuartos de final",
+    "competitionSeason": "2024/25",
+
+    "competitionStats": [
+      {
+        "label": "Posesión Barça",
+        "value": "63%"
+      },
+      {
+        "label": "Tiros Barcelona",
+        "value": "17"
+      },
+      {
+        "label": "Tiros Atlético",
+        "value": "11"
+      },
+      {
+        "label": "Jugador destacado",
+        "value": "Julián Álvarez"
+      },
+      {
+        "label": "Tipo de gol",
+        "value": "Falta directa"
+      }
+    ],
+
+    "goalDescription": "Golazo de falta directa de Julián Álvarez al ángulo en los minutos finales.",
+
+    "timeline": [
+      {
+        "minute": "1'",
+        "type": "info",
+        "event": "Inicio del partido",
+        "detail": "Camp Nou · Champions League"
+      },
+
+      {
+        "minute": "37'",
+        "type": "goal",
+        "event": "⚽ Gol Barcelona",
+        "detail": "Lewandowski"
+      },
+
+      {
+        "minute": "72'",
+        "type": "goal",
+        "event": "⚽ Gol Atlético",
+        "detail": "Griezmann"
+      },
+
+      {
+        "minute": "89'",
+        "type": "goal",
+        "event": "⚽ GOL — Julián Álvarez",
+        "detail": "Falta directa a la escuadra"
+      },
+
+      {
+        "minute": "90'",
+        "type": "info",
+        "event": "Final del partido",
+        "detail": "FC Barcelona 1 — 2 Atlético de Madrid"
+      }
+    ]
+  }
+}
+,
+{
+  "id": "goal_olise_real_madrid_2025",
+  "type": "goal",
+  "action": "show_goal_data",
+
+  "start": 146,
+  "end": 162,
+
+  "payload": {
+
+    "videoMinute": "67'",
+
+    "player": "Michael Olise",
+    "playerNumber": "#17",
+    "playerFlag": "🇫🇷",
+    "playerPosition": "Extremo Derecho",
+    "playerTeam": "Bayern Múnich",
+
+    "playerStats": [
+      {
+        "label": "Goles temporada",
+        "value": "18"
+      },
+      {
+        "label": "Asistencias",
+        "value": "14"
+      },
+      {
+        "label": "Overall",
+        "value": "87"
+      },
+      {
+        "label": "Velocidad",
+        "value": "89"
+      },
+      {
+        "label": "Regate",
+        "value": "92"
+      },
+      {
+        "label": "Tiro",
+        "value": "86"
+      }
+    ],
+
+    "homeTeam": "Real Madrid",
+    "awayTeam": "Bayern Múnich",
+
+    "homeLabel": "Local",
+    "awayLabel": "Visitante",
+
+    "result": "1 — 1",
+
+    "stadium": "Santiago Bernabéu",
+    "date": "2025",
+    "referee": "Clément Turpin",
+    "attendance": "84.112",
+
+    "competition": "UEFA Champions League",
+    "competitionCountry": "Europa",
+    "competitionRound": "Semifinal",
+    "competitionSeason": "2024/25",
+
+    "competitionStats": [
+      {
+        "label": "Posesión Bayern",
+        "value": "55%"
+      },
+      {
+        "label": "Tiros Bayern",
+        "value": "15"
+      },
+      {
+        "label": "Tiros Madrid",
+        "value": "13"
+      },
+      {
+        "label": "Jugador destacado",
+        "value": "Michael Olise"
+      },
+      {
+        "label": "Tipo de gol",
+        "value": "Disparo colocado"
+      }
+    ],
+
+    "goalDescription": "Gran definición de Michael Olise tras una jugada individual entrando desde la banda derecha.",
+
+    "timeline": [
+      {
+        "minute": "1'",
+        "type": "info",
+        "event": "Inicio del partido",
+        "detail": "Bernabéu · Champions League"
+      },
+
+      {
+        "minute": "41'",
+        "type": "goal",
+        "event": "⚽ Gol Real Madrid",
+        "detail": "Vinícius Jr."
+      },
+
+      {
+        "minute": "67'",
+        "type": "goal",
+        "event": "⚽ GOL — Michael Olise",
+        "detail": "Definición cruzada al segundo palo"
+      },
+
+      {
+        "minute": "83'",
+        "type": "info",
+        "event": "Presión Bayern",
+        "detail": "Varias ocasiones consecutivas"
+      },
+
+      {
+        "minute": "90'",
+        "type": "info",
+        "event": "Final del partido",
+        "detail": "Real Madrid 1 — 1 Bayern Múnich"
+      }
+    ]
+  }
+}
+,
+{
+  "id": "goal_dimaria_france_2022",
+  "type": "goal",
+  "action": "show_goal_data",
+
+  "start": 162,
+  "end": 185,
+
+  "payload": {
+
+    "videoMinute": "36'",
+
+    "player": "Ángel Di María",
+    "playerNumber": "#11",
+    "playerFlag": "🇦🇷",
+    "playerPosition": "Extremo Izquierdo",
+    "playerTeam": "Argentina",
+
+    "playerStats": [
+      {
+        "label": "Goles Mundial",
+        "value": "1"
+      },
+      {
+        "label": "Asistencias",
+        "value": "1"
+      },
+      {
+        "label": "Overall",
+        "value": "88"
+      },
+      {
+        "label": "Velocidad",
+        "value": "86"
+      },
+      {
+        "label": "Regate",
+        "value": "89"
+      },
+      {
+        "label": "Definición",
+        "value": "90"
+      }
+    ],
+
+    "homeTeam": "Argentina",
+    "awayTeam": "Francia",
+
+    "homeLabel": "Selección",
+    "awayLabel": "Selección",
+
+    "result": "2 — 0",
+
+    "stadium": "Lusail Stadium",
+    "date": "18 Diciembre 2022",
+    "referee": "Szymon Marciniak",
+    "attendance": "88.966",
+
+    "competition": "Copa del Mundo FIFA",
+    "competitionCountry": "Qatar 2022",
+    "competitionRound": "Final",
+    "competitionSeason": "2022",
+
+    "competitionStats": [
+      {
+        "label": "Posesión Argentina",
+        "value": "54%"
+      },
+      {
+        "label": "Tiros Argentina",
+        "value": "20"
+      },
+      {
+        "label": "Tiros Francia",
+        "value": "10"
+      },
+      {
+        "label": "Jugador destacado",
+        "value": "Ángel Di María"
+      },
+      {
+        "label": "Asistencia",
+        "value": "Lionel Messi"
+      }
+    ],
+
+    "goalDescription": "Gran jugada colectiva culminada por Di María tras asistencia de Lionel Messi.",
+
+    "timeline": [
+      {
+        "minute": "23'",
+        "type": "goal",
+        "event": "⚽ Gol Argentina",
+        "detail": "Lionel Messi (penalti)"
+      },
+
+      {
+        "minute": "36'",
+        "type": "goal",
+        "event": "⚽ GOL — Ángel Di María",
+        "detail": "Asistencia de Lionel Messi"
+      },
+
+      {
+        "minute": "80'",
+        "type": "goal",
+        "event": "⚽ Gol Francia",
+        "detail": "Kylian Mbappé"
+      },
+
+      {
+        "minute": "81'",
+        "type": "goal",
+        "event": "⚽ Gol Francia",
+        "detail": "Kylian Mbappé"
+      },
+
+      {
+        "minute": "90'",
+        "type": "info",
+        "event": "Final del partido",
+        "detail": "Argentina campeona del mundo"
+      }
+    ]
+  }
+}
+,
+{
+  "id": "goal_valverde_city_courtois_2024",
+  "type": "goal",
+  "action": "show_goal_data",
+
+  "start": 185,
+  "end": 198,
+
+  "payload": {
+
+    "videoMinute": "91'",
+
+    "player": "Federico Valverde",
+    "playerNumber": "#15",
+    "playerFlag": "🇺🇾",
+    "playerPosition": "Centrocampista",
+    "playerTeam": "Real Madrid",
+
+    "playerStats": [
+      {
+        "label": "Goles temporada",
+        "value": "5"
+      },
+      {
+        "label": "Asistencias",
+        "value": "8"
+      },
+      {
+        "label": "Overall",
+        "value": "89"
+      },
+      {
+        "label": "Velocidad",
+        "value": "87"
+      },
+      {
+        "label": "Resistencia",
+        "value": "95"
+      },
+      {
+        "label": "Tiro",
+        "value": "86"
+      }
+    ],
+
+    "homeTeam": "Manchester City",
+    "awayTeam": "Real Madrid",
+
+    "homeLabel": "Local",
+    "awayLabel": "Visitante",
+
+    "result": "1 — 2",
+
+    "stadium": "Etihad Stadium",
+    "date": "2024",
+    "referee": "Daniele Orsato",
+    "attendance": "52.000",
+
+    "competition": "UEFA Champions League",
+    "competitionCountry": "Europa",
+    "competitionRound": "Semifinal",
+    "competitionSeason": "2023/24",
+
+    "competitionStats": [
+      {
+        "label": "Posesión City",
+        "value": "64%"
+      },
+      {
+        "label": "Paradas Courtois",
+        "value": "11"
+      },
+      {
+        "label": "Tiros Real Madrid",
+        "value": "9"
+      },
+      {
+        "label": "Jugador destacado",
+        "value": "Courtois"
+      },
+      {
+        "label": "Asistencia",
+        "value": "Courtois"
+      }
+    ],
+
+    "goalDescription": "Gol de Federico Valverde tras una asistencia larguísima de Courtois iniciando el contraataque.",
+
+    "timeline": [
+      {
+        "minute": "22'",
+        "type": "goal",
+        "event": "⚽ Gol Manchester City",
+        "detail": "Erling Haaland"
+      },
+
+      {
+        "minute": "48'",
+        "type": "goal",
+        "event": "⚽ Gol Real Madrid",
+        "detail": "Vinícius Jr."
+      },
+
+      {
+        "minute": "91'",
+        "type": "goal",
+        "event": "⚽ GOL — Federico Valverde",
+        "detail": "Asistencia de Courtois"
+      },
+
+      {
+        "minute": "94'",
+        "type": "info",
+        "event": "Final del partido",
+        "detail": "Manchester City 1 — 2 Real Madrid"
+      }
+    ]
+  }
+}
+]

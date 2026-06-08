@@ -1,0 +1,4 @@
+AddType video/mp4 .mp4
+AddType video/mp4 .m4s
+AddType text/vtt .vtt
+AddType application/json .json
