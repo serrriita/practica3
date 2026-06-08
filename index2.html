@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FootballViz · WebRTC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <span class="brand-icon">⚽</span>
+      <span class="brand-name">FootballViz <span class="brand-tag">WebRTC</span></span>
+    </div>
+    <a href="/" class="back-btn">← Reproductor</a>
+  </nav>
+
+  <main class="main">
+
+    <!-- Sala -->
+    <div class="panel join-panel" id="room-panel">
+      <div class="panel-header">
+        <div class="dot"></div>
+        <h2>Señalización · Unirse a sala</h2>
+        <span class="badge" id="room-badge">Socket.IO</span>
+      </div>
+      <div class="panel-body">
+        <p class="join-desc">Introduce el nombre de la sala. Cuando entren dos usuarios la señalización WebRTC se iniciará automáticamente vía Socket.IO.</p>
+        <div class="input-group">
+          <input type="text" id="room-input" placeholder="ej: sala1" />
+          <button id="join-btn">Entrar</button>
+        </div>
+        <div class="status-bar">
+          <span class="status-dot" id="status-dot"></span>
+          <span class="status" id="status">Esperando conexión...</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Vídeos -->
+    <div class="videos-panel" id="videos-panel" style="display:none">
+      <div class="video-box local">
+        <video id="local-video" autoplay muted playsinline></video>
+        <div class="video-label">
+          <span class="vl-dot local-dot"></span>
+          Tú · Local
+        </div>
+      </div>
+      <div class="video-box remote">
+        <video id="remote-video" autoplay playsinline></video>
+        <div class="video-label">
+          <span class="vl-dot remote-dot"></span>
+          Peer · Remoto
+        </div>
+        <div class="video-placeholder" id="remote-placeholder">
+          <div class="placeholder-icon">👤</div>
+          <div class="placeholder-text">Esperando al otro peer...</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Controles -->
+    <div class="controls" id="controls" style="display:none">
+      <button class="ctrl-pill" id="mute-btn">🎤 Silenciar</button>
+      <button class="ctrl-pill" id="cam-btn">📷 Apagar cámara</button>
+      <button class="ctrl-pill danger" id="hang-btn">📵 Colgar</button>
+    </div>
+
+    <div class="bottom-grid">
+      <!-- Canal de datos -->
+      <div class="panel" id="chat-panel" style="display:none">
+        <div class="panel-header">
+          <div class="dot green"></div>
+          <h3 class="green">Canal de datos</h3>
+          <span class="badge">RTCDataChannel</span>
+        </div>
+        <div class="panel-body">
+          <div class="chat-log" id="chat-log"></div>
+          <div class="chat-input-row">
+            <input type="text" id="chat-input" placeholder="Escribe un mensaje..." />
+            <button id="chat-send">↑</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- IA -->
+      <div class="panel" id="ai-panel" style="display:none">
+        <div class="panel-header">
+          <div class="dot purple"></div>
+          <h3 class="purple">Resumen IA</h3>
+          <span class="badge">Groq · Whisper</span>
+        </div>
+        <div class="panel-body">
+          <button id="ai-btn" class="ai-generate-btn">✨ Transcribir y resumir sesión</button>
+          <div class="ai-output" id="ai-output">El resumen aparecerá aquí...</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Debug log visible en pantalla (útil para móvil) -->
+    <div id="debug-log" style="background:#111;color:#0f0;font-family:monospace;font-size:11px;padding:10px;border-radius:6px;height:120px;overflow-y:auto;border:1px solid #333;display:none"></div>
+
+  </main>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="client.js"></script>
+</body>
+</html>
